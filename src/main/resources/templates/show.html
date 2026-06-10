@@ -7,9 +7,9 @@
 <body>
 	<div>
 		<!-- URLへの値埋め込み -->
-		<h3><a href="@{/function/1}">機能-1</a></h3>
-		<h3><a href="@{/function/2}">機能-2</a></h3>
-		<h3><a href="@{/function/3}">機能-3</a></h3>
+		<h3><a th:href="@{/function/1}">機能-1</a></h3>
+		<h3><a th:href="@{/function/2}">機能-2</a></h3>
+		<h3><a th:href="@{/function/3}">機能-3</a></h3>
 		<!-- 同じformタグ内にある複数ボタン -->
 		<form th:action="@{/send}" method="post">
 			<input type="submit" value="ボタンA" name="a">
